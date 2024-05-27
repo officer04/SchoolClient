@@ -1,0 +1,32 @@
+.card {
+  padding: 20px;
+  width: 310px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 10px;
+
+  .delete {
+    cursor: pointer;
+  }
+
+  .update{
+    cursor: pointer;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    h2 {
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}

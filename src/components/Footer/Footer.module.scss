@@ -1,0 +1,86 @@
+@import './../../styles/variables.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+  height: 20vh;
+
+  .logo {
+    cursor: pointer;
+  }
+
+  .nav {
+    text-align: center;
+
+    a {
+      font-size: 24px;
+      font-weight: 500;
+      color: $white;
+      cursor: pointer;
+    }
+
+    .link {
+      color: $white;
+      cursor: pointer;
+      font-family: 'Inter';
+      transition: 0.15s ease-in;
+    }
+
+    .link:hover {
+      color: rgb(182, 33, 33);
+    }
+
+    
+  }
+
+  .messenger {
+    text-align: center;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      column-gap: 30px;
+    }
+  }
+}
+
+
+@media (max-width: 530px) {
+  .footer {
+    padding: 15px 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+
+    .messenger {
+      text-align: center;
+  
+      h3 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+  
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        column-gap: 30px;
+      }
+    }
+  }
+
+ 
+}

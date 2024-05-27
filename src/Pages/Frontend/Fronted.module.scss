@@ -1,0 +1,155 @@
+@import './../../styles/variables.scss';
+
+
+.infoFront {
+  color: $white;
+  padding: 0px 0px 60px 0px;
+
+  .title {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    span {
+      color: $blue;
+    }
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 623px;
+    height: 180px;
+    border-radius: 10px;
+    background: $blue;
+
+    p {
+      padding: 10px;
+    }
+  }
+}
+
+.cours {
+  font-size: 16px;
+  padding-bottom: 60px;
+  color: #ffff;
+
+  h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .group {
+      width: 350px;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid #fff;
+
+      h3 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+
+.learn {
+  padding: 60px 0;
+  color: #ffff;
+
+  .title {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    span {
+      color: #2d15c1;
+    }
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      text-align: center;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        width: 270px;
+      }
+    }
+  }
+}
+
+
+
+.feedback {
+  padding: 60px 0;
+  color: $white;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+      width: 600px;
+      h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+
+    .button {
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: auto;
+
+      button {
+        padding: 15px 32px;
+        border-radius: 10px;
+        background: $blue;
+        cursor: pointer;
+        color: $white;
+        width: 300px;
+        font-family: "Inter";
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.bg {
+  background-color: $blue;
+}
+
+.bottomLine {
+  border-bottom: 1px solid $blue;
+}
+
+.btnColor {
+  background-color: $blue;
+}
+
+.titleColor {
+  color: $blue;
+}

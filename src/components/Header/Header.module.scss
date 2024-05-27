@@ -1,0 +1,111 @@
+@import './../../styles/variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+
+  .logo {
+    cursor: pointer;
+  }
+
+  .nav {
+    ul {
+      display: flex;
+      gap: 20px;
+
+      .link {
+        color: $white;
+        cursor: pointer;
+        font-family: 'Inter';
+        transition: 0.15s ease-in;
+      }
+
+      .link:hover {
+        color: rgb(182, 33, 33);
+      }
+
+      .link.active {
+        color: rgb(182, 33, 33);
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    gap: 20px;
+    .link {
+      color: $white;
+      cursor: pointer;
+      font-family: 'Inter';
+      transition: 0.15s ease-in;
+    }
+
+    .link:hover {
+      color: rgb(182, 33, 33);
+    }
+
+    .link.active {
+      color: rgb(182, 33, 33);
+    }
+  }
+
+  .wrapper {
+    color: white;
+    display: flex;
+    gap: 0 20px;
+    cursor: pointer;
+
+    .user {
+      color: $white;
+      font-family: 'Inter';
+      transition: 0.15s ease-in;
+    }
+
+    .logOut {
+      color: $white;
+      font-family: 'Inter';
+      transition: 0.15s ease-in;
+    }
+
+    .logOut:hover {
+      color: rgb(182, 33, 33);
+    }
+
+    .user:hover {
+      color: rgb(182, 33, 33);
+    }
+  }
+
+  .login {
+    ul {
+      display: flex;
+      gap: 20px;
+    }
+
+    .link {
+      color: $white;
+      cursor: pointer;
+      font-family: 'Inter';
+      transition: 0.15s ease-in;
+    }
+
+    .link:hover {
+      color: rgb(182, 33, 33);
+    }
+  }
+}
+
+
+@media (max-width: 530px) {
+  .header {
+    padding: 15px 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+  }
+}

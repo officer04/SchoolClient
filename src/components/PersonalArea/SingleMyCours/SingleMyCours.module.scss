@@ -1,0 +1,44 @@
+@import './../../../styles/variables.scss';
+
+.singleMyCours {
+  padding: 40px;
+  height: 65vh;
+
+  .back {
+    width: 100px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    cursor: pointer;
+
+    p {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 322px);
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .group {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.cardWidth {
+  width: 100%;
+}

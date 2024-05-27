@@ -1,0 +1,25 @@
+@import './../../styles/variables.scss';
+
+.priceCours {
+  padding: 60px 0;
+  color: $white;
+
+  .title {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: $white;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    width: 340px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

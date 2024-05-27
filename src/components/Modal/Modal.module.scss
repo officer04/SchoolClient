@@ -1,0 +1,104 @@
+@import './../../styles/variables.scss';
+
+.modal {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+  .card {
+    width: 450px;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: $white;
+    position: relative;
+
+    .square {
+      position: absolute;
+      cursor: pointer;
+      top: 10px;
+      right: 10px;
+    }
+
+    .title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .text {
+      font-size: 10px;
+    }
+
+    .btn {
+      padding: 15px 40px;
+      font-size: 20px;
+      font-family: 'Inter';
+      font-weight: 400;
+      color: $white;
+      background-color: $blue;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 5px;
+    }
+
+    .info {
+      width: 350px;
+      height: 300px;
+      border-radius: 10px;
+      padding: 10px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      // background-color: rgb(110, 102, 102);
+      margin-bottom: 20px;
+
+      .group {
+        p {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+
+        .input {
+          width: 300px;
+          padding: 15px 20px;
+          border-radius: 5px;
+          border: 1px solid black;
+          margin-bottom: 20px;
+        }
+      }
+
+      .wrapper {
+        display: flex;
+        gap: 0 20px;
+
+        .group {
+          p {
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+
+          .input {
+            width: 140px;
+            padding: 15px 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+          }
+        }
+      }
+    }
+  }
+}

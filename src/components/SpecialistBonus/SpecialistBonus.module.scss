@@ -1,0 +1,41 @@
+@import './../../styles/variables.scss';
+
+.specialist {
+  padding: 60px 0;
+  color: $white;
+
+  h2 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    font-weight: 600;
+  }
+
+  .body {
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 10px;
+
+    h3 {
+      width: 400px;
+      margin-bottom: 35px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .group {
+        display: flex;
+        gap: 0 20px;
+        padding: 5px 20px;
+        width: 340px;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid $white;
+        color: $white;
+      }
+    }
+  }
+}

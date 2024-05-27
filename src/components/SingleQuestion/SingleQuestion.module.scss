@@ -1,0 +1,70 @@
+@import './../../styles/variables.scss';
+
+.singleQuestion {
+  padding: 60px 0;
+  color: $white;
+   height: 65vh;
+
+  .card {
+    margin-bottom: 60px;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid $white;
+
+    .title {
+      margin-bottom: 40px;
+      font-size: 32px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .group {
+      width: 445px;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid $white;
+
+      label {
+        color: $white;
+        cursor: pointer;
+
+        input {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .wrapperBtn {
+    display: flex;
+    justify-content: center;
+
+    .cardBtn {
+      width: 400px;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 20px;
+      border-radius: 10px;
+      border: 1px solid $white;
+
+      .btnWidth {
+        width: 200px;
+      }
+
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}

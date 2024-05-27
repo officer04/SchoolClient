@@ -1,0 +1,97 @@
+@import './../../styles/variables.scss';
+
+.modal {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+  .card {
+    width: 450px;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: $white;
+    position: relative;
+
+    .square {
+      position: absolute;
+      cursor: pointer;
+      top: 10px;
+      right: 10px;
+    }
+
+    .text {
+      font-size: 10px;
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 15px 50px;
+      font-size: 20px;
+      font-family: 'Inter';
+      font-weight: 400;
+      color: $white;
+      background-color: $blue;
+      border-radius: 10px;
+      transition: background-color 0.2s ease-in;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #0d0351;
+    }
+
+    .buttonDisabled {
+      margin-top: 20px;
+      padding: 15px 50px;
+      font-size: 20px;
+      font-family: 'Inter';
+      font-weight: 400;
+      color: $white;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #0d0351;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    
+    .info {
+      width: 350px;
+      border-radius: 10px;
+      padding: 30px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      h3 {
+        font-weight: 500;
+        margin-bottom: 3px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+    }
+  }
+}

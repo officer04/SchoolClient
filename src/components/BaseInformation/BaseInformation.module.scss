@@ -1,0 +1,59 @@
+@import './../../styles/variables.scss';
+
+.baseInformation {
+  padding: 45px 0;
+  color: $white;
+
+
+
+  .title {
+    width: 600px;
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 700;
+
+    span {
+      color: $blue;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    .text {
+      width: 600px;
+
+      p {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .btn {
+        padding: 15px 50px;
+        font-size: 20px;
+        font-family: "Inter";
+        font-weight: 400;
+        color: $white;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .group {
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+      width: 250px;
+      color: rgba(255, 255, 255, 0.5);
+      
+      h4 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

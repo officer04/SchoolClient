@@ -1,0 +1,29 @@
+.userList {
+  min-height: 70vh;
+  color: white;
+
+  .title {
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .userList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      text-align: center;
+    }
+  }
+
+}

@@ -1,0 +1,75 @@
+@import './../../../styles/variables.scss';
+
+.cardLink {
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  color: $white;
+  border: 1px solid $white;
+  cursor: pointer;
+
+  span {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    width: 190px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  img {
+    width: 88px;
+    height: 75px;
+    border-radius: 10px;
+  }
+}
+
+.card {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  color: $white;
+  border: 1px solid $white;
+
+  span {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    width: 190px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  img {
+    width: 88px;
+    height: 75px;
+    border-radius: 10px;
+  }
+}

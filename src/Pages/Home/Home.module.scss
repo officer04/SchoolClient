@@ -1,0 +1,143 @@
+@import './../../styles/variables.scss';
+
+
+.InfoBanner {
+  padding: 150px 0px 70px 0px;
+  text-align: center;
+  color: $white;
+
+  .title {
+    margin-bottom: 40px;
+    font-size: 42px;
+    font-weight: 600;
+  }
+
+  .btn {
+    font-family: "Inter";
+    padding: 15px 40px;
+    font-size: 20px;
+    color: $white;
+    background-color: $red;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: $redHover;
+  }
+}
+
+
+.direction {
+  padding: 60px 0px;
+
+  .title {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #FFFF;
+
+
+    h1 {
+      font-size: 42px;
+      font-weight: 600;
+      margin-bottom: 35px;
+    }
+
+    p {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
+
+  .group {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFF;
+    align-items: center;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    padding: 60px 0px;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: 400;
+      width: 635px;
+    }
+  }
+}
+
+.coursesBanner {
+  color: $white;
+  padding: 60px 0px;
+  
+  .title {
+    margin-bottom: 70px;
+    font-size: 42px;
+    font-weight: 600;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      width: 300px;
+      text-align: center;
+
+      img {
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.connection {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+
+  .text {
+    width: 540px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .card {
+    width: 320px;
+    padding: 55px 30px;
+    background-color: $red;
+    border-radius: 10px;
+
+    .input {
+      margin-bottom: 20px;
+      
+      input {
+        width: 100%;
+        padding: 10px 15px 15px 5px;
+        color: $white;
+        border-radius: 10px;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      padding: 15px 20px;
+      color: $white;
+      background-color: $bg;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+}

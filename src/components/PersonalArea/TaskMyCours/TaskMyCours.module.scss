@@ -1,0 +1,73 @@
+@import './../../../styles/variables.scss';
+
+.taskMyCours {
+  padding: 60px 0;
+  color: $white;
+
+  .loading {
+    height: 65vh;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .head {
+    .title {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    a {
+      font-size: 12px;
+      font-weight: 400;
+      color: $white;
+
+      &:hover {
+        color: rgb(90, 90, 90);
+      }
+    }
+  }
+
+  .navigate {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .btnBack {
+      padding: 15px 20px;
+      width: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 8px;
+      border: 1px solid $white;
+      border-radius: 10px;
+      cursor: pointer;
+
+      button {
+        color: $white;
+        background-color: $bg;
+        cursor: pointer;
+      }
+    }
+
+    .btnNext {
+      padding: 15px 20px;
+      width: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 8px;
+      border-radius: 10px;
+      border: 1px solid $white;
+      cursor: pointer;
+
+      button {
+        color: $white;
+        background-color: $bg;
+        cursor: pointer;
+      }
+    }
+  }
+}
