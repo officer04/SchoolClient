@@ -1,0 +1,32 @@
+.chooseCours {
+  padding: 10px;
+  height: 80vh;
+  color: white;
+  
+  .back {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 1065px) {
+  .wrapper {
+    justify-content: center;
+  }
+}

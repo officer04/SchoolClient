@@ -62,10 +62,6 @@ const CreateModule = () => {
                 placeholder="Введите название модуля"
                 {...register('title', {
                   required: 'Поле обязательно к заполнению',
-                  minLength: {
-                    value: 3,
-                    message: 'Минимум 3 символов в навазнии',
-                  },
                 })}
               />
               {errors?.title && (

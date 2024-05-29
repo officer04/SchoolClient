@@ -14,7 +14,6 @@
     flex-wrap: wrap;
 
     .loading {
-      // text-align: center;
       display: flex;
       justify-content: center;
       font-size: 40px;
@@ -31,6 +30,19 @@
     }
   }
 }
+
+
+
+
+@media (max-width: 1000px) {
+  .courses {
+    .wrapper {
+     justify-content: center;
+    }
+  }
+}
+
+
 
 @media (max-width: 540px) {
   .courses {

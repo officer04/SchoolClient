@@ -28,17 +28,17 @@ const Footer = () => {
         <h3>Подпишитесь</h3>
         <ul>
           <li>
-            <a href="https://youtube.com">
+            <a href="https://www.youtube.com/channel/UCYyyaZ9slypV0MPj4ipqQCw">
               <img src={youtube} alt="youtube" />
             </a>
           </li>
           <li>
-            <a href="https://vk.com">
+            <a href="https://vk.com/tema0412">
               <img src={vk} alt="vk" />
             </a>
           </li>
           <li>
-            <a href="https://letegram.com">
+            <a href="https://t.me/an_officer04">
               <img src={telegram} alt="telegram" />
             </a>
           </li>

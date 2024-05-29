@@ -1,14 +1,17 @@
-import { useDispatch } from 'react-redux';
 import styles from './CardUser.module.scss';
 import { MdOutlineDelete } from 'react-icons/md';
 import { deteteUserById, getAllUsers } from './../../../featers/auth/auth';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../../utils/conts';
 
 const CardUser = ({ id, username, email, handleClickDelete }) => {
   console.log(id);
   return (
     <div className={styles.card}>
       <div className={styles.wrapper}>
-        <p className={styles.update}>Выдать курс</p>
+        <Link to={`${ROUTES.CHOOSE_COURS_ADMIN}/${id}`}>
+          <p className={styles.update}>Выдать курс</p>
+        </Link>
         <MdOutlineDelete
           size={20}
           className={styles.delete}

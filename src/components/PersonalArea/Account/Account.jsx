@@ -19,7 +19,7 @@ const Account = () => {
         <ButtonLink to={ROUTES.SINGLE_QUESTION} styleWidth={styles.btnWidth}>Тык сюда</ButtonLink>
       </div>
       <div>
-        <img src={bg} alt="" />
+        <img className={styles.img} src={bg} alt="" />
       </div>
     </div>
   );

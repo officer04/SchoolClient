@@ -28,7 +28,7 @@ const SingleTasksMyCours = () => {
         <h1 className={styles.title}>{lessonsInfo.moduleTitle}</h1>
         <div className={styles.subtile}>
           <img src={taskSmall} alt="" />
-          <p>0 из {lessonsInfo.lessons?.length}</p>
+          <p>{lessonsInfo.progress?.length} из {lessonsInfo.lessons?.length}</p>
           <p>уроков</p>
         </div>
       </div>
@@ -39,7 +39,7 @@ const SingleTasksMyCours = () => {
                 key={lesson._id}
                 id={lesson._id}
                 title={lesson.title}
-                progress="Пройдено"
+                progress={lesson.progress}
                 img={flag}
               />
             ))

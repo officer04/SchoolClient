@@ -92,10 +92,6 @@ const ChangeCours = () => {
                 type="text"
                 {...register('title', {
                   required: 'Поле обязательное к заполнению',
-                  minLength: {
-                    value: 5,
-                    message: 'Минимум 5 символов в имени',
-                  },
                 })}
               />
               {errors?.title && (
@@ -113,10 +109,6 @@ const ChangeCours = () => {
                 type="text"
                 {...register('description', {
                   required: 'Поле обязательное к заполнению',
-                  minLength: {
-                    value: 5,
-                    message: 'Минимум 5 символов в имени',
-                  },
                 })}
               />
               {errors?.description && (
@@ -134,10 +126,6 @@ const ChangeCours = () => {
                 type="text"
                 {...register('imgUrl', {
                   required: 'Поле обязательное к заполнению',
-                  minLength: {
-                    value: 5,
-                    message: 'Минимум 5 символов в имени',
-                  },
                 })}
               />
               {errors?.imgUrl && (

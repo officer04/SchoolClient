@@ -100,11 +100,11 @@ const UserFormLogin = () => {
                   type={!visiblePassword ? 'password' : 'text'}
                   {...register('password', {
                     required: 'Поля обязательное к заполнению',
-                    pattern: {
-                      value: /^(?=.*\d)\w{3,20}$/m,
-                      message:
-                        'Пароль должен состоять из ластинских букв и цифр длина от 3 до 20 символов',
-                    },
+                    // pattern: {
+                    //   value: /^(?=.*\d)\w{3,20}$/m,
+                    //   message:
+                    //     'Пароль должен состоять из ластинских букв и цифр длина от 3 до 20 символов',
+                    // },
                   })}
                 />
                 {!visiblePassword ? (

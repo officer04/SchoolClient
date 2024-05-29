@@ -11,6 +11,19 @@ export const createCours = createAsyncThunk('cours/createCours', async (payload,
   }
 });
 
+export const createUserCours = createAsyncThunk(
+  'cours/createUserCours',
+  async (payload, thunkAPI) => {
+    try {
+      const response = await instance.post(`/user`, payload);
+      return response;
+    } catch (error) {
+      console.log(error);
+      return thunkAPI.rejectWithValue(error);
+    }
+  },
+);
+
 export const deleteCours = createAsyncThunk('cours/deleteCours', async (coursId, thunkAPI) => {
   try {
     const response = await instance.delete(`/cours/${coursId}`);
@@ -30,7 +43,6 @@ export const changeCours = createAsyncThunk('cours/changeCours', async (payload,
     return thunkAPI.rejectWithValue(error);
   }
 });
-
 
 export const createModule = createAsyncThunk('cours/createModule', async (payload, thunkAPI) => {
   try {
@@ -168,6 +180,15 @@ export const deleteLesson = createAsyncThunk('cours/deleteLesson', async (lesson
     return response;
   } catch (error) {
     console.log(error);
+    return thunkAPI.rejectWithValue(error);
+  }
+});
+
+export const changeLesson = createAsyncThunk('cours/changeLesson', async (lessonInfo, thunkAPI) => {
+  try {
+    const response = await instance.patch(`/lesson/${lessonInfo}`);
+    return response.data;
+  } catch (error) {
     return thunkAPI.rejectWithValue(error);
   }
 });

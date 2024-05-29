@@ -6,9 +6,10 @@
   justify-content: space-between;
   align-items: center;
   color: $white;
+  padding: 0 10px;
 
   .text {
-    width: 600px;
+    max-width: 600px;
 
     h1 {
       font-size: 48px;
@@ -22,24 +23,36 @@
       margin-bottom: 60px;
     }
 
-    // a {
-    //   padding: 15px 60px;
-    //   border-radius: 10px;
-    //   font-size: 20px;
-    //   font-weight: 500;
-    //   font-family: 'Inter';
-    //   background: $blue;
-    //   color: $white;
-    //   cursor: pointer;
-    //   transition: 0.15s;
-    // }
-
     .btnWidth {
       width: 270px;
     }
 
     a:hover {
       background-color: $blueHover;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .account {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+
+    .img {
+      width: 200px;
+      height: 200px;
     }
   }
 }

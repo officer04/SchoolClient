@@ -60,10 +60,6 @@ const CreateCours = () => {
                 placeholder="Введите название курса"
                 {...register('title', {
                   required: 'Поле обязательно к заполнению',
-                  minLength: {
-                    value: 5,
-                    message: 'Минимум 5 символов в навазнии',
-                  },
                 })}
               />
               {errors?.title && (

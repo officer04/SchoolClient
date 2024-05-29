@@ -29,9 +29,9 @@ const SingleMyCours = () => {
       <div className={styles.card}>
         {isLoading ? (
           <CardMyCours
-            title={cours.title}
-            description={cours.description}
-            img={cours.imgUrl}
+            title={cours?.data?.title}
+            description={cours?.data?.description}
+            img={cours?.data?.imgUrl}
             style={styles.cardWidth}
             disable={false}
           />

@@ -25,6 +25,7 @@ import ModuleLessons from './components/Admin/ModuleLessons/ModuleLessons';
 import CreateLesson from './components/Admin/CreateLesson/CreateLesson';
 import UserList from './components/Admin/UserList/UserList';
 import ChangeLesson from './components/Admin/ChangeLesson/ChangeLesson';
+import ChooseCours from './components/Admin/ChooseCours/ChooseCours';
 
 export const authRoutes = [
   {
@@ -105,6 +106,10 @@ export const adminRoutes = [
   {
     path: ROUTES.CHANGE_MODULE + '/:moduleId',
     Component: <ChangeModule />,
+  },
+  {
+    path: ROUTES.CHOOSE_COURS_ADMIN + "/:userId",
+    Component: <ChooseCours />,
   },
 ];
 

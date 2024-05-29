@@ -1,8 +1,8 @@
 @import './../../../styles/variables.scss';
 
 .singleMyCours {
-  padding: 40px;
-  height: 65vh;
+  padding: 20px;
+  min-height: 65vh;
 
   .back {
     width: 100px;
@@ -19,8 +19,8 @@
   }
 
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 322px);
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
   }
@@ -40,5 +40,13 @@
 }
 
 .cardWidth {
-  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 740px) {
+  .singleMyCours {
+    .wrapper {
+      justify-content: center;
+    }
+  }
 }

@@ -14,7 +14,7 @@ const CardModule = ({ title, id, handleClickDeleteCourse }) => {
         </button>
         <h3>{title}</h3>
         <div>
-          <p>100%</p>
+          {/* <p>100%</p> */}
           <div className={styles.prograss} />
         </div>
       </div>

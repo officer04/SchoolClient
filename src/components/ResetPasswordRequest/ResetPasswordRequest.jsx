@@ -40,6 +40,14 @@ const ResetPasswordRequest = () => {
         setIsLoading(false);
         reset();
       }
+
+
+      if (response.payload?.response?.status === 500) {
+        setErr(response.payload.response.data.message);
+        setIsLoading(false);
+        reset();
+      }
+
       if (response.payload?.status === 201) {
         setIsVisibleForm(true);
         setIsLoading(false);
@@ -93,10 +101,11 @@ const ResetPasswordRequest = () => {
           </form>
         ) : (
           <div className={styles.card}>
-            <p>Отправили письмо на {email}</p>
+            <p>Информация по восстановлению пароля отправлена на email: {email}</p>
+
             <p>
-              если у вас возникли трудности вы можете <br />
-              связаться с нами
+              Дождитесь письма и следуйте описанным в нем инструкциям. <br />
+              Если вы не получили письмо, попробуйте повторить процедуру восстановления
             </p>
             <button className={styles.button} onClick={handleClick}>
               Понятно

@@ -6,7 +6,7 @@ import { Link, useParams } from 'react-router-dom';
 import { ROUTES } from '../../../utils/conts';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getLessonOne } from '../../../featers/cours/cours';
+import { changeLesson, getLessonOne } from '../../../featers/cours/cours';
 
 const TaskMyCours = () => {
   const dispatch = useDispatch();
@@ -14,7 +14,9 @@ const TaskMyCours = () => {
   const { lesson, isLoading } = useSelector(({ cours }) => cours);
   useEffect(() => {
     dispatch(getLessonOne(lessonId));
+    dispatch(changeLesson(lessonId))
   }, []);
+  
 
   console.log(lesson);
   const youtubeUrl = 'https://www.youtube.com/embed/';
@@ -41,14 +43,15 @@ const TaskMyCours = () => {
       {!isLoading ? (
         <h3 className={styles.loading}>Loading....</h3>
       ) : (
-        <iframe
-          width="1100"
-          height="535"
-          src={`${youtubeUrl}${lesson.youtubeVideoId}`}
-          title="Полный Full Stack курс ReactJS + NodeJS для начинающих за 4 часа! (MongoDB, Express, React, NodeJS)"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
+        <p>ююююююю</p>
+        // <iframe
+        //   width="1100"
+        //   height="535"
+        //   src={`${youtubeUrl}${lesson.youtubeVideoId}`}
+        //   title="Полный Full Stack курс ReactJS + NodeJS для начинающих за 4 часа! (MongoDB, Express, React, NodeJS)"
+        //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        //   allowFullScreen
+        // ></iframe>
       )}
     </div>
   );

@@ -25,6 +25,9 @@ export const ROUTES = {
   CHANGE_LESSON: '/admin/lesson',
   LESSONS_MODULE_ADMIN: '/admin/module-lessons',
   USER_LIST_ADMIN: '/admin/user-list',
+  CHOOSE_COURS_ADMIN: '/admin/choose-cours',
 };
 
-export const BaseURL = 'http://localhost:5000';
+// export const BaseURL = 'http://localhost:5000';
+// export const BaseURL = 'http://localhost:3005/';
+export const BaseURL = 'https://bba3hnbvuckb09vbk1c3.containers.yandexcloud.net';

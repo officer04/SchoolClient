@@ -7,7 +7,7 @@
   .title {
     font-size: 32px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -60,5 +60,20 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px 20px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .ListMyCours {
+    padding: 0 10px;
+
+    .title {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .wrapper {
+      justify-content: center;
+    }
   }
 }

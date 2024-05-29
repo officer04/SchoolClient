@@ -121,10 +121,6 @@ const ChangeLesson = () => {
                 type="text"
                 {...register('title', {
                   required: 'Поле обязательное к заполнению',
-                  minLength: {
-                    value: 5,
-                    message: 'Минимум 5 символов в имени',
-                  },
                 })}
               />
               {errors?.title && (
@@ -161,10 +157,6 @@ const ChangeLesson = () => {
                 placeholder='Введите айди видео с ютуба'
                 {...register('youtubeVideoId', {
                   required: 'Поле обязательное к заполнению',
-                  minLength: {
-                    value: 5,
-                    message: 'Минимум 5 символов в имени',
-                  },
                 })}
               />
               {errors?.title && (

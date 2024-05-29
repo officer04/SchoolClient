@@ -10,7 +10,7 @@ const authAxios = axios.create({
 });
 
 const authInterceptor = (config) => {
-  config.headers.authorization = `${localStorage.getItem('token')}`;
+  config.headers['auth_token'] = localStorage.getItem('token');
   return config;
 };
 

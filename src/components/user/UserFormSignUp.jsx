@@ -40,7 +40,7 @@ const UserFormSignUp = () => {
         reset();
       }
 
-      if (response.payload?.status === 200) {
+      if (response.payload?.status === 201) {
         setIsLoading(false);
         const token = response.payload.data.token;
         const user = jwtDecode(token);
@@ -80,10 +80,6 @@ const UserFormSignUp = () => {
               <input
                 {...register('username', {
                   required: 'Поля обязательное к заполнению',
-                  minLength: {
-                    value: 5,
-                    message: 'Минимум 5 символов в имени',
-                  },
                 })}
               />
               {errors?.username && (
@@ -123,11 +119,11 @@ const UserFormSignUp = () => {
                   type={!visiblePassword ? 'text' : 'password'}
                   {...register('password', {
                     required: 'Поля обязательное к заполнению',
-                    pattern: {
-                      value: /^(?=.*\d)\w{3,20}$/m,
-                      message:
-                        'Пароль должен состоять из ластинских букв и цифр длина от 3 до 20 символов',
-                    },
+                    // pattern: {
+                    //   value: /^(?=.*\d)\w{3,20}$/m,
+                    //   message:
+                    //     'Пароль должен состоять из ластинских букв и цифр длина от 3 до 20 символов',
+                    // },
                   })}
                 />
                 {!visiblePassword ? (

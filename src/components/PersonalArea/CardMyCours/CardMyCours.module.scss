@@ -2,6 +2,7 @@
 
 .cardLink {
   width: 400px;
+  height: 170px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -71,5 +72,16 @@
     width: 88px;
     height: 75px;
     border-radius: 10px;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .cardLink {
+    width: 350px;
+  }
+
+  h2 {
+    width: 100px;
   }
 }
